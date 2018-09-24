@@ -46,7 +46,7 @@ namespace ESFA.DC.Auditing.Service
                 {
                     new MsSqlServerApplicationLoggerOutputSettings
                     {
-                        ConnectionString = configuration["loggerConnectionString"],
+                        ConnectionString = configuration["logDbConString"],
                         MinimumLogLevel = LogLevel.Information
                     },
                     new ConsoleApplicationLoggerOutputSettings
